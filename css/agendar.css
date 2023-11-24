@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+
+form.componenteAutomatico{
+    overflow: hidden;
+}
+form.componenteAutomatico{
+    background-color: rgba(255, 153, 0, 0.24);
+
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    /* left: var(--nav-width); */
+    margin-left: var(--nav-width);
+    /* display: flex; */
+    display: none;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 15px 60px 15px;
+    justify-content: space-around;
+    /* align-items: ; */
+
+}
+form.componenteAutomatico>svg.closeDetailsUser{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+form.componenteAutomatico>svg.closeDetailsUser:hover{
+    opacity: .8;
+}
+form.detailsUser__view{
+    display: flex;
+    animation: viewFormDetailsUser 2s forwards;
+}
+form.detailsUser__ocult{
+    display: flex;
+    right: -100%;
+    transition: all 5s;
+}
+@keyframes viewFormDetailsUser {
+    from{
+        right: -100%;
+    }
+    to{
+        right: 0;
+    }
+}
+
+
+form.componenteAutomatico>div.input>svg.indic{
+    color: rgb(49, 15, 240);
+}
+form.componenteAutomatico>div.input>svg.secretEye{
+    color: rgb(47, 11, 173);
+    cursor: pointer;
+}
+form.componenteAutomatico>div.input>svg.secretEye:hover{
+    color: rgb(112, 92, 184);
+    transition: all .5s;
+}
+
+form.componenteAutomatico>div.input{
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+
+    border-bottom: 2px solid #000;
+    min-width: 120px;
+}
+form.componenteAutomatico>div.input>label{
+    position: absolute;
+    left: 29px;
+    pointer-events: none;
+    top: 11px;
+    color: rgb(56, 27, 219);
+}
+form.componenteAutomatico>div.input>input{
+    all: unset;
+    background:none;
+
+    min-height: 40px;
+    flex: 1;
+    padding: 0 11px;
+}
+form.componenteAutomatico>div.btns{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 15px;
+    padding: 12px;
+    
+}
+form.componenteAutomatico>div.btns>button{
+    display: flex;
+    gap: 12px;
+    border: none;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 50px;
+    color: aliceblue;
+
+}
+form.componenteAutomatico>div.btns>button:nth-child(1){
+    background-color: rgba(64, 64, 192, 0.822);
+}
+form.componenteAutomatico>div.btns>button:nth-child(2){
+    background-color: rgba(69, 175, 20, 0.822);
+}
+form.componenteAutomatico>div.btns>button:nth-child(3){
+    background-color: rgba(204, 37, 37, 0.822);
+}
+form.componenteAutomatico>div.btns>button:hover{
+    opacity: .8;
+}
+
+form.componenteAutomatico>div.input>input.inputForm:is(:focus, :valid)~label
+{
+    font-size: 12px;
+    top: -6px !important;
+
+    transition: all .5s ease;
+}

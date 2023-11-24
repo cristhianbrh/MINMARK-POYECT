@@ -27,7 +27,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-fw fa-warehouse"></i>
                 </div>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active" >
                 <a class="nav-link" href="ventas.html">
                     <i class="fas fa-fw fa-tag"></i>
                     <span>Ventas</span></a>
@@ -137,11 +137,11 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
-                    <div class="form-inline">
+                    <form class="form-inline">
                         <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                             <i class="fa fa-bars"></i>
                         </button>
-                    </div>
+                    </form>
 
                     <!-- Topbar Search -->
                     <form
@@ -237,7 +237,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Nombre de Usuario</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Yeyson Chávez</span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
@@ -266,9 +266,94 @@
                     </ul>
 
                 </nav>
+
+                <h2>Registro de ventas</h2>
+
                 <div>
-                    
-                    <!--Aqui agregar su parte-->
+                    <div class="card-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                              <label for="validationCustom01" class="form-label">Producto</label>
+                              <input type="text" class="form-control" id="validationCustom01" value="bolt" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationCustom02" class="form-label">Precio</label>
+                              <input type="text" class="form-control" id="validationCustom02" value="3.00" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Cantidad</label>
+                                <input type="text" class="form-control" id="validationCustom02" value="" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Sub Total</label>
+                                <input type="text" class="form-control" id="validationCustom02" value="" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                              </div>
+                            
+                            
+                                                      </div>
+                            
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                  Estas de acuerdo con los datos ingresados
+                                </label>
+                                <div class="invalid-feedback">
+                                  You must agree before submitting.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button class="btn btn-primary" type="submit">Enviar Formulario</button>
+                            </div>
+                          </form>
+
+                    </div>
+                    <div class="card-body">
+                       
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <td>Producto</td>
+                                        <td>Precio</td>
+                                        <td>cantidad</td>
+                                        <td>sub total</td>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>bolt</td>
+                                        <td>2.50</td>
+                                        <td>2</td>
+                                        <td>5.00</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                       
+                                        <td>sprite</td>
+                                        <td>3.00</td>
+                                        <td>3</td>
+                                        <td>9</td>
+                                       
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -298,13 +383,46 @@
                     actual.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-primary" href="login.html">Cerrar sesión</a>
+                    <a class="btn btn-primary" href="index.html">Cerrar sesión</a>
                 </div>
             </div>
         </div>
     </div>
 
     </section>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4" style="overflow-y: auto;">
+        <section vent ="section_vent" class="section_vent sectionCamb" style="display: none;">
+           
+              <table class="table_component">
+                <thead>
+                    <tr>
+                        <td>Producto</td>
+                        <td>Precio</td>
+                        <td>cantidad</td>
+                        <td>sub total</td>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>bolt</td>
+                        <td>local</td>
+                        <td>local</td>
+                        <td>local</td>
+                        
+                    </tr>
+                    <tr>
+                       
+                        <td>local</td>
+                        <td>local</td>
+                        <td>local</td>
+                        <td>local</td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
     <!-- Bootstrap core JavaScript-->
     <script src="js/jquery.min.js"></script>

@@ -201,8 +201,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">Noviembre 12, 2023</div>
-                                        <span class="font-weight-bold">¡Un nuevo informe mensual está listo para
-                                            descargar!</span>
+                                        <span class="font-weight-bold">El producto azucar perteneciente a la categoría abarrotes tiene un stock bajo de 1!</span>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -213,7 +212,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">Noviembre 20, 2023</div>
-                                        ¡Se han depositado $290.29 en su cuenta!
+                                        Se ha vendido 190 soles en este día
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar todas las
@@ -289,8 +288,7 @@
                     <main class="sup" style="height:100%; width:100%;">
 
                         <div _ngcontent-ckd-c2="" class="container-fluid">
-                            <sb-dashboard-head _ngcontent-ckd-c1=""
-                                title="Dashboard" _nghost-ckd-c3="">
+                            <sb-dashboard-head _ngcontent-ckd-c1="" title="Dashboard" _nghost-ckd-c3="">
                                 <h1 _ngcontent-ckd-c3="" class="mt-4">Agrega tus categorías</h1><!----><sb-breadcrumbs
                                     _ngcontent-ckd-c3="" _nghost-ckd-c10="">
                                     <ol _ngcontent-ckd-c10="" class="breadcrumb mb-4"><!---->
@@ -298,9 +296,11 @@
                                                 _ngcontent-ckd-c10="">Agrega tus categorías</span></li>
                                     </ol>
                                 </sb-breadcrumbs>
-                            </sb-dashboard-head><sb-dashboard-cards _ngcontent-ckd-c1="" _nghost-ckd-c4="" >
+                            </sb-dashboard-head><sb-dashboard-cards _ngcontent-ckd-c1="" _nghost-ckd-c4="">
                                 <div _ngcontent-ckd-c4="" class="row" style="gap: 15px;">
-                                    <div _ngcontent-ckd-c4="" style="cursor: pointer; padding: 0;" class="col-xl-3 col-md-6" onclick="viewDataClick('appendOrEditMantenedorCategory', 'appendOrEdit', 'appendOrEdit__active')">
+                                    <div _ngcontent-ckd-c4="" style="cursor: pointer; padding: 0;"
+                                        class="col-xl-3 col-md-6"
+                                        onclick="viewDataClick('appendOrEditMantenedorCategory', 'appendOrEdit', 'appendOrEdit__active')">
                                         <sb-card-view-details _ngcontent-ckd-c4="" background="bg-success"
                                             _nghost-ckd-c11="">
                                             <div _ngcontent-ckd-c11="" class="card text-white mb-4 bg-success">
@@ -312,7 +312,9 @@
                                             </div>
                                         </sb-card-view-details>
                                     </div>
-                                    <div _ngcontent-ckd-c4="" style="cursor: pointer; padding: 0;" class="col-xl-3 col-md-6" onclick="viewDataClick('appendOrEditMantenedorCategory', 'appendOrEdit', 'appendOrEdit__active')">
+                                    <div _ngcontent-ckd-c4="" style="cursor: pointer; padding: 0;"
+                                        class="col-xl-3 col-md-6"
+                                        onclick="viewDataClick('appendOrEditMantenedorCategory', 'appendOrEdit', 'appendOrEdit__active')">
                                         <sb-card-view-details _ngcontent-ckd-c4="" background="bg-danger"
                                             _nghost-ckd-c11="">
                                             <div _ngcontent-ckd-c11="" class="card text-white mb-4 bg-danger">
@@ -329,58 +331,89 @@
                                 </div>
 
                         </div>
-                        <div 
-                            style="display: flex; top: 90vh;
+                        <div style="display: flex; top: 90vh;
                              width: 90%; position: fixed; justify-content: center;">
-                            <svg xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;" width="40" height="40" fill="black"
-                                class="bi bi-plus-circle-fill" viewBox="0 0 16 16"  onclick="viewDataClick('appendOrEditMantenedorCategory', 'appendOrEdit', 'appendOrEdit__active')">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;" width="40" height="40"
+                                fill="black" class="bi bi-plus-circle-fill" viewBox="0 0 16 16"
+                                onclick="viewDataClick('appendOrEditMantenedorCategory', 'appendOrEdit', 'appendOrEdit__active')">
                                 <path
                                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
                             </svg>
                         </div>
 
                     </main>
-                    <div id="appendOrEditMantenedorCategory" class="appendOrEdit appendOrEdit__deactive" style="position: fixed; display: none; right: 10px; bottom: 0%; z-index: 4;" >
+                    <div id="appendOrEditMantenedorCategory" class="appendOrEdit appendOrEdit__deactive"
+                        style="position: fixed; display: none; right: 10px; bottom: 0%; z-index: 4;">
                         <form action="">
                             <div class="inputsOptions ">
-                                <svg onclick="viewDataClick('appendOrEditMantenedorCategory', 'appendOrEdit', 'appendOrEdit__desactive' )" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-octagon-fill closeDetailsUser" viewBox="0 0 16 16">
-                                    <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"></path>
+                                <svg onclick="viewDataClick('appendOrEditMantenedorCategory', 'appendOrEdit', 'appendOrEdit__desactive' )"
+                                    xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-x-octagon-fill closeDetailsUser" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z">
+                                    </path>
                                 </svg>
-        
-                                <div class="componentInput_text_Style_container" style="max-width: 300px; margin: 20px auto;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ui-radios indic" viewBox="0 0 16 16">
-                                        <path d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zM0 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm7-1.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM3 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path>
+
+                                <div class="componentInput_text_Style_container"
+                                    style="max-width: 300px; margin: 20px auto;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-ui-radios indic" viewBox="0 0 16 16">
+                                        <path
+                                            d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zM0 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm7-1.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM3 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z">
+                                        </path>
                                     </svg>
                                     <input class="inputForm" type="text" name="rol" required="" pattern=".+" id="">
                                     <label for="rol">Descripción</label>
                                 </div>
                                 <div class="componentInput_checkbox_Style_container">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ui-radios indic" viewBox="0 0 16 16">
-                                        <path d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zM0 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm7-1.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM3 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-ui-radios indic" viewBox="0 0 16 16">
+                                        <path
+                                            d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zM0 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm7-1.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zM3 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z">
+                                        </path>
                                     </svg>
                                     <p>Estado:</p>
                                     <input type="checkbox" name="" id="">
                                 </div>
                             </div>
-                            <div class="buttons" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: end; margin-top: 20px;">
-                                <button class="component_button_style" style="background-color: rgba(64, 64, 192, 0.822);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
-                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                            <div class="buttons"
+                                style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: end; margin-top: 20px;">
+                                <button class="component_button_style"
+                                    style="background-color: rgba(64, 64, 192, 0.822);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-trash" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z">
+                                        </path>
+                                        <path
+                                            d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z">
+                                        </path>
                                     </svg>
                                     <p>Agregar</p>
                                 </button>
-                                <button class="component_button_style" style="background-color: rgba(69, 175, 20, 0.822);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
-                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                <button class="component_button_style"
+                                    style="background-color: rgba(69, 175, 20, 0.822);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-trash" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z">
+                                        </path>
+                                        <path
+                                            d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z">
+                                        </path>
                                     </svg>
                                     <p>Editar</p>
                                 </button>
-                                <button class="component_button_style" style="background-color: rgba(204, 37, 37, 0.822);">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
-                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                <button class="component_button_style"
+                                    style="background-color: rgba(204, 37, 37, 0.822);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-trash" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z">
+                                        </path>
+                                        <path
+                                            d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z">
+                                        </path>
                                     </svg>
                                     <p>Eliminar</p>
                                 </button>
@@ -435,7 +468,7 @@
 
     <style>
         @media screen and (max-width: 800px) {
-            .appendOrEdit{
+            .appendOrEdit {
                 width: 100% !important;
             }
         }

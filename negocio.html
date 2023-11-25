@@ -27,7 +27,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-fw fa-warehouse"></i>
                 </div>
@@ -42,89 +42,95 @@
             <hr class="sidebar-divider">
             <style>
                 .nav-item.active .nav-link {
-                  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Aplica una sombra al enlace activo */
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                    /* Aplica una sombra al enlace activo */
                 }
-              </style>
-              
-              <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                  var navItems = document.querySelectorAll(".nav-item");
-              
-                  navItems.forEach(function(item) {
-                    item.addEventListener("click", function() {
-                      navItems.forEach(function(item) {
-                        item.classList.remove("active");
-                      });
-                      this.classList.add("active");
+            </style>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var navItems = document.querySelectorAll(".nav-item");
+
+                    navItems.forEach(function (item) {
+                        item.addEventListener("click", function () {
+                            navItems.forEach(function (item) {
+                                item.classList.remove("active");
+                            });
+                            this.classList.add("active");
+                        });
                     });
-                  });
                 });
-              </script>
-              
-              <li class="nav-item">
+            </script>
+
+            <li class="nav-item">
                 <a class="nav-link" href="usuarios.html">
-                  <i class="fas fa-fw fa-user"></i>
-                  <span>Usuarios</span>
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Usuarios</span>
                 </a>
-              </li>
-              
-              <li class="nav-item">
+            </li>
+
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                  aria-expanded="true" aria-controls="collapseTwo">
-                  <i class="fas fa-fw fa-cog"></i>
-                  <span>Mantenedor</span>
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Mantenedor</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                  <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="categoria.html"><i class="fas fa-fw fa-list-alt " style="margin-right: 4px;"></i>Categoria</a>
-                    <a class="collapse-item" href="productos.html"><i class="fas fa-fw fa-box" style="margin-right: 4px;"></i>Productos</a>
-                    <a class="collapse-item" href="negocio.html"><i class="fas fa-fw fa-building" style="margin-right: 4px;"></i>Negocio</a>
-                  </div>
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="categoria.html"><i class="fas fa-fw fa-list-alt "
+                                style="margin-right: 4px;"></i>Categoria</a>
+                        <a class="collapse-item" href="productos.html"><i class="fas fa-fw fa-box"
+                                style="margin-right: 4px;"></i>Productos</a>
+                        <a class="collapse-item active" href="negocio.html"><i class="fas fa-fw fa-building"
+                                style="margin-right: 4px;"></i>Negocio</a>
+                    </div>
                 </div>
-              </li>
-              
-              <li class="nav-item">
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" href="ventas.html">
-                  <i class="fas fa-fw fa-tag"></i>
-                  <span>Ventas</span>
+                    <i class="fas fa-fw fa-tag"></i>
+                    <span>Ventas</span>
                 </a>
-              </li>
-              
-              <li class="nav-item">
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" href="compras.html">
-                  <i class="fas fa-fw fa-shopping-cart"></i>
-                  <span>Compras</span>
+                    <i class="fas fa-fw fa-shopping-cart"></i>
+                    <span>Compras</span>
                 </a>
-              </li>
-              
-              <li class="nav-item">
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" href="clientes.html">
-                  <i class="fas fa-fw fa-users"></i>
-                  <span>Clientes</span>
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Clientes</span>
                 </a>
-              </li>
-              
-              <li class="nav-item">
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" href="proveedor.html">
-                  <i class="fas fa-fw fa-id-card"></i>
-                  <span>Proveedores</span>
+                    <i class="fas fa-fw fa-id-card"></i>
+                    <span>Proveedores</span>
                 </a>
-              </li>
-              
-              <li class="nav-item">
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                  aria-expanded="true" aria-controls="collapseUtilities">
-                  <i class="fas fa-fw fa-chart-bar"></i>
-                  <span>Reportes</span>
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-chart-bar"></i>
+                    <span>Reportes</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                  data-parent="#accordionSidebar">
-                  <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="reporteCompras.html"><i class="fas fa-fw fa-shopping-cart"></i> Reporte Compras</a>
-                    <a class="collapse-item" href="reporteVentas.html"><i class="fas fa-fw fa-tag"></i> Reporte Ventas</a>
-                  </div>
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="reporteCompras.html"><i class="fas fa-fw fa-shopping-cart"></i>
+                            Reporte Compras</a>
+                        <a class="collapse-item" href="reporteVentas.html"><i class="fas fa-fw fa-tag"></i> Reporte
+                            Ventas</a>
+                    </div>
                 </div>
-              </li>
+            </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -156,7 +162,7 @@
                     <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <H2 style="color: black;">Administrator</H2>
+                            <H2 style="color: black;">Negocio</H2>
                         </div>
                     </form>
 
@@ -191,8 +197,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">Noviembre 12, 2023</div>
-                                        <span class="font-weight-bold">¡Un nuevo informe mensual está listo para
-                                            descargar!</span>
+                                        <span class="font-weight-bold">El producto azucar perteneciente a la categoría abarrotes tiene un stock bajo de 1!</span>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -203,7 +208,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">Noviembre 20, 2023</div>
-                                        ¡Se han depositado $290.29 en su cuenta!
+                                        Se ha vendido 190 soles en este día
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar todas las
@@ -275,14 +280,79 @@
                     </ul>
 
                 </nav>
-                <div>
-                    
-                    <!--Aqui agregar su parte-->
+                <div class="containerNegocio">
+                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <label for="">Logo</label>
+                        <div class="container">
+                            <div class="logo-container">
+                                <img src="https://s.tmimgcdn.com/scr/800x500/267900/plantilla-de-diseno-de-logotipo-vectorial-de-compras-v4_267937-original.jpg"
+                                    alt="Logo de la empresa" class="img-fluid">
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blackColor"
+                            class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="card-body">
+                                <form class="row g-3 needs-validation" novalidate
+                                    style="display: flex; flex-direction: column; justify-content: center;">
+                                    <div style="display: flex; flex-direction: column; justify-content: center; margin-bottom: 12px;">
+                                        <label for="validationCustom01" class="form-label">Nombre del Negocio</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="Rosa"
+                                            required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; flex-direction: column; justify-content: center; margin-bottom: 12px;">
+                                        <label for="validationCustom02" class="form-label">RUC</label>
+                                        <input type="text" class="form-control" id="validationCustom02"
+                                            value="104365879" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; flex-direction: column; justify-content: center; margin-bottom: 12px;">
+                                        <label for="validationCustom02" class="form-label">Descripción</label>
+                                        <input type="text" class="form-control" id="validationCustom02"
+                                            value="Tienda de Abarrotes" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-12" style="display: flex; justify-content: center; gap: 12px;">
+                                        <button class="btn btn-success" type="submit" style="display: flex; align-items: center; gap: 10px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                fill="white" class="bi bi-floppy2-fill" viewBox="0 0 16 16">
+                                                <path d="M12 2h-2v3h2z" />
+                                                <path
+                                                    d="M1.5 0A1.5 1.5 0 0 0 0 1.5v13A1.5 1.5 0 0 0 1.5 16h13a1.5 1.5 0 0 0 1.5-1.5V2.914a1.5 1.5 0 0 0-.44-1.06L14.147.439A1.5 1.5 0 0 0 13.086 0zM4 6a1 1 0 0 1-1-1V1h10v4a1 1 0 0 1-1 1zM3 9h10a1 1 0 0 1 1 1v5H2v-5a1 1 0 0 1 1-1" />
+                                            </svg>
+                                            Guardar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
 
+
         </div>
+        <!--Aqui agregar su parte-->
+    </div>
+
+    </div>
+
+    </div>
 
     </div>
     <!-- End of Page Wrapper -->
@@ -307,7 +377,7 @@
                     actual.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-primary" href="index.html">Cerrar sesión</a>
+                    <a class="btn btn-primary" href="login.html">Cerrar sesión</a>
                 </div>
             </div>
         </div>
@@ -322,6 +392,21 @@
     <script src="js/sb-admin-2.min.js"></script>
     <script src="js/Chart.min.js"></script>
     <script src="js/agendar.js"></script>
+
+    <style>
+        .containerNegocio{
+            display: grid; 
+            grid-template-columns: .5fr 1fr;
+        }
+        @media screen and (max-width: 800px) {
+            .containerNegocio{
+                width: 100% !important;
+                display: grid; 
+                grid-template-columns: 1fr ;
+                grid-template-rows: 1fr 1fr ;
+            }
+        }
+    </style>
 
 </body>
 

@@ -190,8 +190,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">Noviembre 12, 2023</div>
-                                        <span class="font-weight-bold">¡Un nuevo informe mensual está listo para
-                                            descargar!</span>
+                                        <span class="font-weight-bold">El producto azucar perteneciente a la categoría abarrotes tiene un stock bajo de 1!</span>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -202,7 +201,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">Noviembre 20, 2023</div>
-                                        ¡Se han depositado $290.29 en su cuenta!
+                                        Se ha vendido 190 soles en este día
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar todas las
@@ -273,6 +272,7 @@
 
                     </ul>
 
+
                 </nav>
                 <div class="sup" style="height: calc(100% - (4.375rem + 1.5rem));">
 
@@ -282,7 +282,8 @@
                                 <form class="form_search" action=""
                                     style="display: flex;  gap: 10px; justify-content: end;">
                                     <p>Buscar por:</p>
-                                    <div class="input-group inputSearchCard" style="height: 20px; width: 50%; gap: 10px; ">
+                                    <div class="input-group inputSearchCard"
+                                        style="height: 20px; width: 50%; gap: 10px; ">
                                         <select class="form-select" aria-label="Buscar por">
                                             <option value="1">DNI</option>
                                             <option value="2">Nombre</option>
@@ -382,7 +383,7 @@
                                         <td>Inactivo</td>
                                     </tr>
                                     <tr style="cursor: pointer;"
-                                        onclick="viewDataClick('sectionUser_form_detailsUser', 'detailsUser', 'detailsUser__view')">
+                                        onclick=" viewDataClick('sectionUser_form_detailsUser', 'detailsUser', 'detailsUser__view')">
                                         <td>5728193467</td>
                                         <td>Carolina Andrea Rojas Sánchez</td>
                                         <td>carolina.rojas@email.com</td>
@@ -394,13 +395,24 @@
                             </table>
                         </div>
                     </div>
+                    <div style="display: flex; top: 90vh;
+                             width: 90%; position: fixed; justify-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;" width="40" height="40"
+                            fill="black" class="bi bi-plus-circle-fill" viewBox="0 0 16 16"
+                            onclick="viewDataClick('sectionUser_form_detailsUser', 'detailsUser', 'detailsUser__view')">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                        </svg>
+                    </div>
 
                     <div class="detailsUser" id="sectionUser_form_detailsUser"
                         style="right: 0; display: none; background-color: #FFE7C2; position: fixed;  flex-direction: column; bottom: 0; border-radius: 10px 10px 0 0;">
                         <div style="cursor: pointer; display: flex; justify-content: end; padding: 5px 10px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-x-octagon-fill" viewBox="0 0 16 16"
-                            onclick="viewDataClick('sectionUser_form_detailsUser', 'detailsUser', 'detailsUser__ocult' )">
-                                <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black"
+                                class="bi bi-x-octagon-fill" viewBox="0 0 16 16"
+                                onclick="viewDataClick('sectionUser_form_detailsUser', 'detailsUser', 'detailsUser__ocult' )">
+                                <path
+                                    d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z" />
                             </svg>
                         </div>
                         <form action="" class="d-flex flex-column" style="color: rgb(31, 25, 25);">
@@ -410,7 +422,7 @@
                                     style="min-width: 280px; max-width: 300px;">
                                     <i class="fas fa-fw fa-user"></i>
 
-                                    <input class="inputForm ms-2 col-6 " type="text" name="DNI" required pattern=".+"
+                                    <input class="inputForm ms-2 col-6 " type="text" id="input_DNI" name="DNI" required pattern=".+"
                                         id="">
                                     <label for="DNI" class="ms-2" style="margin-left: 30px;">Número de documento</label>
                                 </div>
@@ -418,7 +430,7 @@
                                     style="min-width: 280px; max-width: 300px;">
                                     <i class="fas fa-fw fa-id-card"></i>
 
-                                    <input class="inputForm ms-2 col-6" type="text" name="Nombre" required pattern=".+"
+                                    <input class="inputForm ms-2 col-6"  type="text" id="input_Nombre" name="Nombre" required pattern=".+"
                                         id="">
                                     <label for="DNI" class="ms-2" style="margin-left: 30px;">Nombre completo</label>
                                 </div>
@@ -426,15 +438,16 @@
                                     style="min-width: 280px; max-width: 300px;">
                                     <i class="fas fa-fw fa-envelope"></i>
 
-                                    <input class="inputForm ms-2 col-6" type="text" name="Correo" required pattern=".+"
+                                    <input class="inputForm ms-2 col-6" type="text" id="input_Correo" name="Correo" required pattern=".+"
                                         id="">
                                     <label for="DNI" class="ms-2" style="margin-left: 30px;">Correo</label>
                                 </div>
                                 <div class="d-flex form-group "
                                     style="justify-content: center; gap: 5px; align-items: center; transform: translateY(15px);">
                                     <i class="fas fa-fw fa-user-tie"></i>
-                                    <label for="exampleFormControlSelect1" style="transform: translateY(4px);">Rol</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <label for="input_Select_Rol"
+                                        style="transform: translateY(4px);">Rol</label>
+                                    <select class="form-control" id="input_Select_Rol">
                                         <option>Seleccionar opción</option>
                                         <option>Vendedor</option>
                                         <option>Gerente</option>
@@ -443,8 +456,9 @@
                                 <div class="form-group d-flex"
                                     style="gap: 5px; align-items: center; transform: translateY(15px);">
                                     <i class="fas fa-fw fa-check-circle"></i>
-                                    <label for="exampleFormControlSelect1" style="transform: translateY(4px);">Estado</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <label for="input_Select_Estado"
+                                        style="transform: translateY(4px);">Estado</label>
+                                    <select class="form-control" id="input_Select_Estado">
                                         <option>Seleccionar opción</option>
                                         <option>Activo</option>
                                         <option>Inactivo</option>
@@ -542,7 +556,7 @@
 
     <style>
         @media screen and (max-width: 800px) {
-            .inputSearchCard{
+            .inputSearchCard {
                 width: 100% !important;
             }
         }

@@ -27,7 +27,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-fw fa-warehouse"></i>
                 </div>
@@ -68,7 +68,7 @@
                 </a>
               </li>
               
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                   aria-expanded="true" aria-controls="collapseTwo">
                   <i class="fas fa-fw fa-cog"></i>
@@ -77,7 +77,7 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                   <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="categoria.html"><i class="fas fa-fw fa-list-alt " style="margin-right: 4px;"></i>Categoria</a>
-                    <a class="collapse-item" href="productos.html"><i class="fas fa-fw fa-box" style="margin-right: 4px;"></i>Productos</a>
+                    <a class="collapse-item active" href="productos.html"><i class="fas fa-fw fa-box" style="margin-right: 4px;"></i>Productos</a>
                     <a class="collapse-item" href="negocio.html"><i class="fas fa-fw fa-building" style="margin-right: 4px;"></i>Negocio</a>
                   </div>
                 </div>
@@ -150,13 +150,13 @@
                         <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                             <i class="fa fa-bars"></i>
                         </button>
-                    </div>
+                      </div>
 
                     <!-- Topbar Search -->
                     <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <H2 style="color: black;">Administrator</H2>
+                            <H2 style="color: black;">Productos</H2>
                         </div>
                     </form>
 
@@ -191,8 +191,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">Noviembre 12, 2023</div>
-                                        <span class="font-weight-bold">¡Un nuevo informe mensual está listo para
-                                            descargar!</span>
+                                        <span class="font-weight-bold">El producto azucar perteneciente a la categoría abarrotes tiene un stock bajo de 1!</span>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -203,7 +202,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">Noviembre 20, 2023</div>
-                                        ¡Se han depositado $290.29 en su cuenta!
+                                        Se ha vendido 190 soles en este día
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar todas las
@@ -276,7 +275,144 @@
 
                 </nav>
                 <div>
+                    <h2>Datos del Producto</h2>
+
+                <div>
+                    <div class="card-body">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4">
+                              <label for="validationCustom01" class="form-label">Código: </label>
+                              <input type="text" class="form-control" id="validationCustom01" value=" " required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label for="validationCustom02" class="form-label">Nombre: </label>
+                              <input type="text" class="form-control" id="validationCustom02" value="Mariela" required>
+                              <div class="valid-feedback">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Descripción: </label>
+                                <input type="text" class="form-control" id="validationCustom02" value=" " required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Estado: </label>
+                                <input type="text" class="form-control" id="validationCustom02" value="Activo" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <label for="validationCustom02" class="form-label">Categoría: </label>
+                                <input type="text" class="form-control" id="validationCustom02" value="Categoría uno" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                              </div>
+                            
+                            
+                                                      </div>
+
+                                                      <head>
+                                                        <meta charset="UTF-8">
+                                                        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                                                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+                                                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Se utiliza Font Awesome para los íconos -->
+                                                        <title>Botones con Íconos</title>
+                                                      </head>
+                                                      <body>
+                                                      
+                                                      <div class="container">
+                                                        <div class="row">
+                                                          <div class="col">
+                                                            <button type="button" class="btn btn-primary">Guadar
+                                                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-floppy2-fill" viewBox="0 0 16 16">
+                                                                <path d="M12 2h-2v3h2z"/>
+                                                                <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v13A1.5 1.5 0 0 0 1.5 16h13a1.5 1.5 0 0 0 1.5-1.5V2.914a1.5 1.5 0 0 0-.44-1.06L14.147.439A1.5 1.5 0 0 0 13.086 0zM4 6a1 1 0 0 1-1-1V1h10v4a1 1 0 0 1-1 1zM3 9h10a1 1 0 0 1 1 1v5H2v-5a1 1 0 0 1 1-1"/>
+                                                              </svg>
+                                                            </button>
+                                                          </div>
+                                                          <div class="col">
+                                                            <button type="button" class="btn btn-success">Limpiar
+                                                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-unindent" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd" d="M13 8a.5.5 0 0 0-.5-.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H12.5A.5.5 0 0 0 13 8"/>
+                                                                <path fill-rule="evenodd" d="M3.5 4a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 1 0v-7a.5.5 0 0 0-.5-.5"/>
+                                                              </svg>
+                                                            </button>
+                                                          </div>
+                                                          <div class="col">
+                                                            <button type="button" class="btn btn-danger">Eliminar
+                                                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                                                <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                                                              </svg>
+                                                            </button>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                                       
+                    </div>
+                    <div class="card-body"></div>
+                    <h2>Opción Búsqueda</h2>
+                <form class="d-flex" role="search">
                     
+                    <div class="btn btn-success" type="submit">Buscar por
+                      <input class="form-control me-2" type="search" placeholder="Descripción" aria-label="Search">
+                      <input class="form-control me-2" type="search" placeholder=" " aria-label="Search"></div>
+                  </form>
+
+                  <h1>
+
+                  </h1>
+
+                    <div class="card-body">
+                       
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <td>Código</td>
+                                        <td>Descripción</td>
+                                        <td>Categoría</td>
+                                        <td>Stock</td>
+                                        <td>Precio compra</td>
+                                        <td>Precio venta</td>
+                                        <td>Estado</td>                                       
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Arroz</td>
+                                        <td>Abarrotes</td>
+                                        <td>2 sacos de 50KG</td>
+                                        <td>2.70</td>
+                                        <td>3.50</td>
+                                        <td></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                       
+                                        <td>2</td>
+                                        <td>Azúcar</td>
+                                        <td>Abarrotes</td>
+                                        <td>1 saco de 50KG</td>
+                                        <td>3.00</td>
+                                        <td>3.80</td>
+                                        <td></td>
+                                       
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
                     <!--Aqui agregar su parte-->
                 </div>
 
@@ -307,7 +443,7 @@
                     actual.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-primary" href="index.html">Cerrar sesión</a>
+                    <a class="btn btn-primary" href="login.html">Cerrar sesión</a>
                 </div>
             </div>
         </div>
